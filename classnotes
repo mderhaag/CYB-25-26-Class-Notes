@@ -1,1 +1,27 @@
+# Git Commands
+
+## Summary
+This document is for git commands that will be useful for class.
+- Most common used commands
+- Will get you through most github
+- Can be used on Windows, Linux, and Mac
+
+### Basic Commands
+**git status** = checking the current state of local repository
+**git add <filename>** = adds the file to be included for your repo
+    EX: git add file1.sh
+**git add .** = adds all the files and lines that are new for the repo
+**git commit -m "<text>"** = adds a commit message for the new files and lines
+    EX: git commit -m "adding new file"
+**git push origin <branch_name>** = updates your github repo with your changes
+    EX: git push origin main
+
+#### If changes are made on the github repo instead of the local repo
+Any changes made up there need to reflect your local repository. If there's any differences,
+you will run into merge conflicts.
+
+**git fetch origin** = checks all the local updates from the origin remote but doesn't automatically merge
+the new changes
+
+**git pull origin** = fetches updates and merges them into your local repo
 
