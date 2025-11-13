@@ -1,0 +1,25 @@
+# Nmap Commands
+
+# Overview
+
+- Nmap: Network Mapper
+- nmap = networkmapper
+- Using to scan on local network
+- Helps us locate devices that we may or may not know about
+- Gives us back useful information such as IP address, MAC addresses, hostnames, and much more
+- Different Levels of scanning (1-5)
+    Goes from quieter to louder
+
+## Instalation
+
+- sudo apt install nmap
+
+### Basic Commands
+
+- nmap <ipaddress>
+    a. nmap 192.168.1.0
+    b. nmap scanme.nmap.org
+
+-nmap localhost = scans your target machine
+    a. allows you to see what ports you have available on your device
+
