@@ -1,0 +1,27 @@
+## Adding SSH Keys to Raspberry pi
+
+### On Windows Machine
+- Move into the .ssh folder on either Powershell or Git Bash
+- If you don't have a .pub key file, run the following:
+    - ssh-keygen
+    - let it create the key pair in the folder
+    - (Optional) add password to use ssh key
+    - Hit enter until your key pair appears
+
+The pair generated should either be id_rsa.pub or id_ed25519.pub
+
+
+### On Raspberry Pi
+- Find the network name, username, and ip address of your machine
+- Find out if the file path /hom/{USER}/.ssh exists
+    - If the file path DOES exist, file a file called authorized_keys
+    - If the file DOESN'T exist, create it using that exact name
+- Remember the file path you want to move your ssh key into
+    - For now, move the public key into Desktop
+
+### On Windows Machine
+- Find your ssh public key
+- Use the SCP command to move it into your Desktop folder on your raspberry pi
+    - scp <key> <user>@<ipaddress>:/path/to/file
+    - EX: scp 
+    - If the ip is correct, it should ask you for a password
