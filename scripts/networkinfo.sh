@@ -1,5 +1,5 @@
 #!/bin/bash
-#
+# text
 #
 # User info
 echo "User info:"

@@ -27,4 +27,4 @@ case $answer in
    "s") echo "Shutting down..."
         sudo shutdown now
         ;;
-esac
+    end
