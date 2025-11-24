@@ -95,5 +95,10 @@ nmap = networkmapper
 - nmap -sU ip <ipaddress>
     - EX: nmap -sU -p 1-10000 192.168.1.1
 
-
-
+- nmap script scans
+    - built-in scripts that do more specific scans
+    - used against out-of-support OS or applications
+        - Windows 7 for example, broken applications
+        - nmap --script default, safe <target>
+        - nmap --script http-headers 192.168.1.0
+        - auth, broadcast, discovery, exploit, external, fuzzer
