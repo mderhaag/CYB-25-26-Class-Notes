@@ -9,10 +9,10 @@ nmap = networkmapper
     - Different Levels of scanning (1-5)
     - Goes from quieter to louder
   
- ## Instalation  
+# Instalation  
 - sudo apt install nmap
   
- ### Basic Commands
+# Basic Commands
 - nmap <ipaddress>
     - nmap 192.168.1.0
     - nmap scanme.nmap.org
@@ -41,7 +41,7 @@ nmap = networkmapper
     - Can also nmap -sn X.X.X*
         EX: nmap -sn 192.168.1.*
 
-#### Scans
+# Scans
 - Scan excluding an ip
     EX: nmap -sn 192.168.1.* --exclude 192.168.1.250
     - Mainly used if there is an ip address you don't want to find
@@ -64,7 +64,7 @@ nmap = networkmapper
 - All Formats = nmap -oA <filename><target(s)>
     - creating three files from the results just like -oN, -oX, and -oG
 
-##### Os and service detection
+# Os and service detection
 - nmap -A <ipaddress>
     - Tends to get paired with different scan speeds using T1-5
     - Ex: nmap -A -T4 192.168.1.1
@@ -78,6 +78,22 @@ nmap = networkmapper
 - nmap -sV 192.168.1.1
 - only gets us the service versions running on the ports
 - faster than trying to get the entire OS
+
+
+# Scanning via Protocol of TCP and UDP
+- TCP = Transmission Control Protocol
+    - Connection-oriented 
+    - Secure
+- UDP = User Datagram Protocol
+    - Connectionless
+    - Not secure
+    - Sending data as fast as it can
+ 
+- nmap -sT -p <ipaddress>
+    - EX: nmap -sT -p 1-10000 192.168.1.1
+
+- nmap -sU ip <ipaddress>
+    - EX: nmap -sU -p 1-10000 192.168.1.1
 
 
 
