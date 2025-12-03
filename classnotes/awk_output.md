@@ -9,6 +9,7 @@
     - You can call out and style out a new page based on your findings
 
 ## Basics
+
     - EX: filename | awk '{print $2}'
     - prints out the second column
     - $1, $2, $3 ... $NF
@@ -40,3 +41,16 @@
 
 - substr($0, 1, 10) --> print out the first 10 characters of the entire line
 
+
+awk '/MAC Address:/ { print substr($0, index($0,$4)) }' example _ scan.txt
+EX: MAC Address AA:BB:CC:DD:EE:FF (Raspberry Pi Foundation)
+    - $1 = MAC
+    - $2 = Address
+    - $3 = AA:BB:CC:DD:EE:FF
+    - $4 = (Raspberry
+    - $5 = Pi
+    = $6 = Foundation)
+- print substr($0 = Prints out the whole line
+- index ($0, $4) = Prints all the way to the end of the vendor
+    - index(string, substring)
+    
