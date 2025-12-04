@@ -1,3 +1,8 @@
-sudo wlan0 down
-sudo ip link set dev wlan0 address XX:XX:XX:XX:XX
-sudo ip link set dev wlan0 up
+# Interface offline
+- sudo ifconfig wlan0 down
+
+# Set MAC Address
+- sudo ip link set dev wlan0 address aa:bb:cc:dd:ee:ff
+
+# Interface back online
+- sudo ifconfig wlan0 up
